@@ -1,0 +1,6 @@
+Begin
+    Define Tax Rates
+    User Inputs Income
+    Calculate Tax Rate based on user Input
+    Print taxes withheld and remaining Baance after Taxes
+End
