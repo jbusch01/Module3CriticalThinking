@@ -1,6 +1,19 @@
 Begin
-    Define Tax Rates
-    User Inputs Income
-    Calculate Tax Rate based on user Input
-    Print taxes withheld and remaining Baance after Taxes
+    Display "Enter weekly income"
+    Read userIncome
+
+    if userIncome < 500 then
+        taxRate = 0.10
+    Else if userIncome < 1500 then
+        taxRate = 0.15
+    Else if userIncome < 2500 then
+        taxRate = 0.20
+    Else
+        taxRate = 0.30
+    End if
+
+    taxAmount = userIncome * taxRate
+    netIncome = userIncome - taxAmount
+
+    Display "Total taxes withheld and remaining amount for the week", taxAmount, netIncome
 End
